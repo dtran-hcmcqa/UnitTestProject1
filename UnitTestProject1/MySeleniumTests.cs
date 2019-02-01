@@ -29,10 +29,11 @@ namespace SeleniumBingTests
             driver.Navigate().GoToUrl(appURL + "/");
             driver.FindElement(By.Id("sb_form_q")).SendKeys("Azure Pipelines");
             driver.FindElement(By.Id("sb_form_go")).Click();
-            driver.FindElement(By.XPath("//ol[@id='b_results']/li/h2/a/strong[3]")).Click();
+            //driver.FindElement(By.XPath("//ol[@id='b_results']/li/h2/a/strong[3]")).Click();
+            driver.FindElement(By.CssSelector("ol li h2 a")).Click();
             Assert.IsTrue(driver.Title.Contains("Azure Pipelines"), "Verified title of the page");
         }
-
+        
         /// <summary>
         ///Gets or sets the test context which provides
         ///information about and functionality for the current test run.

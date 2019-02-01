@@ -2,3 +2,5 @@
 packages
 *.ide
 UnitTestProject1/obj/Debug
+UnitTestProject1/obj/Debug/UnitTestProject1.csproj.FileListAbsolute.txt
+.vs/UnitTestProject1/v15/sqlite3/storage.ide
